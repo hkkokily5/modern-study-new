@@ -109,7 +109,7 @@ const SubTitles = () => {
                     }]'
         data-splitout="none"
       >
-        모던 스터디 카페
+        모던스터디 카페
       </div>
 
       <div
@@ -136,7 +136,9 @@ const SubTitles = () => {
                     }]'
       >
         <p className="white-space">
-          안녕하세요 모던스터디 카페에 오신 것을 환영합니다
+          안녕하세요 모던스터디 카페에
+          <br />
+          오신 것을 환영합니다
         </p>
       </div>
 
