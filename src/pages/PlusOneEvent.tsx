@@ -13,7 +13,7 @@ const PlusOneEvent = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1>1+1 오픈 이벤트</h1>
+              <h1>오픈 이벤트</h1>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ const EventPane = () => {
               <div className="row">
                 <div className="col-md-12 margin-20px-bottom">
                   <div className="blog-list-simple-img">
-                    <img src="/assets/custom/event/event1.png" alt="" />
+                    <img src="/assets/custom/event/event1.jpg" alt="" />
                   </div>
                 </div>
 
