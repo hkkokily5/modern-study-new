@@ -1,11 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, hydrate } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById('root'),
-);
+const rootElement = document.getElementById('root');
+
+if (!rootElement) {
+  throw new Error('Root Element is missing!');
+}
+
+if (rootElement.hasChildNodes()) {
+  hydrate(
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>,
+    rootElement,
+  );
+} else {
+  render(
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>,
+    rootElement,
+  );
+}

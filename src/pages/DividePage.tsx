@@ -1,27 +1,33 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PageTemplate from '../components/PageTemplate';
 
 const DividePage = () => {
   return (
-    <PageTemplate>
-      <section
-        className="page-title-section2 bg-img cover-background"
-        data-overlay-dark="7"
-        data-background="/assets/custom/divide/main.jpg"
-        style={{ backgroundImage: 'url(/assets/custom/divide/main.jpg)' }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1>모던스터디만의 차별성</h1>
+    <>
+      <Helmet>
+        <title>차별성 - 모던스터디카페</title>
+      </Helmet>
+      <PageTemplate>
+        <section
+          className="page-title-section2 bg-img cover-background"
+          data-overlay-dark="7"
+          data-background="/assets/custom/divide/main.jpg"
+          style={{ backgroundImage: 'url(/assets/custom/divide/main.jpg)' }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1>모던스터디만의 차별성</h1>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <LeftContent />
-      <RightContent />
-    </PageTemplate>
+        <LeftContent />
+        <RightContent />
+      </PageTemplate>
+    </>
   );
 };
 
@@ -95,7 +101,8 @@ const RightContent = () => {
             </div>
 
             <p>
-              내부에 사물함까지 있어 이용자분들이 편리하게 사용하실 수 있습니다.<br />
+              내부에 사물함까지 있어 이용자분들이 편리하게 사용하실 수 있습니다.
+              <br />
               (13좌석 한정)
             </p>
 

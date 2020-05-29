@@ -1,27 +1,33 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PageTemplate from '../components/PageTemplate';
 
 const AboutPage = () => {
   return (
-    <PageTemplate>
-      <section
-        className="page-title-section2 bg-img cover-background"
-        data-overlay-dark="7"
-        data-background="/assets/custom/about/main.jpg"
-        style={{ backgroundImage: 'url(/assets/custom/about/main.jpg)' }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1 className="mb-2">브랜드 스토리</h1>
-              <h3 style={{ color: '#D2D2D2' }}>모던 스터디 카페</h3>
+    <>
+      <Helmet>
+        <title>브랜드 스토리 - 모던스터디카페</title>
+      </Helmet>
+      <PageTemplate>
+        <section
+          className="page-title-section2 bg-img cover-background"
+          data-overlay-dark="7"
+          data-background="/assets/custom/about/main.jpg"
+          style={{ backgroundImage: 'url(/assets/custom/about/main.jpg)' }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1 className="mb-2">브랜드 스토리</h1>
+                <h3 style={{ color: '#D2D2D2' }}>모던 스터디 카페</h3>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <AboutOne />
-    </PageTemplate>
+        <AboutOne />
+      </PageTemplate>
+    </>
   );
 };
 

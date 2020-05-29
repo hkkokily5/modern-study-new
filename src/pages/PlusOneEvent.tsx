@@ -1,26 +1,32 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import PageTemplate from '../components/PageTemplate';
 
 const PlusOneEvent = () => {
   return (
-    <PageTemplate>
-      <section
-        className="page-title-section2 bg-img cover-background"
-        data-overlay-dark="7"
-        data-background="/assets/custom/event/event.jpg"
-        style={{ backgroundImage: 'url(/assets/custom/event/event.jpg)' }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <h1>오픈 이벤트</h1>
+    <>
+      <Helmet>
+        <title>오픈 이벤트 - 모던스터디카페</title>
+      </Helmet>
+      <PageTemplate>
+        <section
+          className="page-title-section2 bg-img cover-background"
+          data-overlay-dark="7"
+          data-background="/assets/custom/event/event.jpg"
+          style={{ backgroundImage: 'url(/assets/custom/event/event.jpg)' }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <h1>오픈 이벤트</h1>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <EventPane />
-    </PageTemplate>
+        <EventPane />
+      </PageTemplate>
+    </>
   );
 };
 
